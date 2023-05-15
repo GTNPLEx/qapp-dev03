@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Container, Grid, List, ListItem, ListItemText, Typography, IconButton, Box, Avatar } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
-import Navbar from 'src/components/navbar.js';
+
 import { ColorModeContext } from 'theme.js';
 
 const Home = ({ toggleColorMode }) => {
@@ -18,7 +18,7 @@ dispatch({ type: 'FETCH_SHEET_DATA' });
 return (
 <>
 <ColorModeContext.Provider value={{ toggleColorMode }}>
-<Navbar />
+
 <Container>
 <Typography variant="h4" sx={{ backgroundColor: '#3f51b5', color: 'white', padding: 2, textAlign: 'center' }}>
 Employee Data

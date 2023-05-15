@@ -1,21 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Google from 'src/img/google.png';
 import Facebook from '../img/facebook.png';
 import Linkedin from '../img/linkedin.png';
 import styles from 'src/styles/login.module.css';
+import Navbar from 'src/components/Navbar.js';
+
+
 
 const Login = () => {
+  const [authenticated, setAuthenticated] = useState(false);
+
   function google() {
     window.open('http://localhost:5000/auth/google', '_self');
+    setAuthenticated(true);
   }
+
 
   const linkedin = () => {
     window.open('http://localhost:5000/auth/linkedin', '_self');
+    setAuthenticated(true);
   };
 
   const facebook = () => {
     window.open('http://localhost:5000/auth/facebook', '_self');
+    setAuthenticated(true);
   };
+
+  // Your authentication logic here
+  // You can set the authenticated state based on your criteria
+  // For example, if the user is logged in successfully, you can call setAuthenticated(true)
 
   return (
     <div className={styles.login}>
