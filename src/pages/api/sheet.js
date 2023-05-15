@@ -1,7 +1,9 @@
-import { GoogleSpreadsheet } from 'google-spreadsheet';
-import credentials from 'credentials.json';
+require('dotenv').config();
 
-const doc = new GoogleSpreadsheet('18eVcJy6z-UOegP50OtHw2O-5YbqhMGtu9vVCLQY__Z8');
+import { GoogleSpreadsheet } from 'google-spreadsheet';
+
+const doc = new GoogleSpreadsheet(process.env.GOOGLE_SPREADSHEET_ID);
+
 
 
 

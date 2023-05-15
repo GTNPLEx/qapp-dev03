@@ -16,6 +16,8 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.3",
     "axios": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "dotenv-json": "^1.0.0",
     "gh-pages": "^5.0.0",
     "google-spreadsheet": "^3.3.0",
     "next": "13.4.1",
