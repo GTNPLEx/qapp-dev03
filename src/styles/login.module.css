@@ -1,0 +1,79 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+  }
+  
+  .loginTitle {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .loginButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--common-white);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loginButton:hover {
+    background-color: var(--primary-dark-color);
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+  }
+  
+  .line {
+    width: 100%;
+    border-bottom: 1px solid var(--divider-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .or {
+    color: var(--text-secondary-color);
+    font-weight: bold;
+  }
+  
+  .right {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .submit {
+    background-color: var(--primary-color);
+    color: var(--common-white);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit:hover {
+    background-color: var(--primary-dark-color);
+  }
+  

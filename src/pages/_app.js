@@ -1,10 +1,14 @@
-import React from 'react';
 import { Provider } from 'react-redux';
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { useMode } from 'theme.js';
 import store from 'store.js';
 import Home from 'src/pages/Login.js';
+import { useMode } from 'theme.js';
+import '../styles/globals.css';
+import 'src/styles/login.module.css';
+
+
+const theme = createTheme();
 
 export default function MyApp() {
   const [theme, colorMode] = useMode();
