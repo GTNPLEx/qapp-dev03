@@ -1,12 +1,14 @@
 {
   "name": "next-saga-test",
+  "homepage": "https://GTNPLex.github.io/qapp-dev03",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "Deploy": "npm run build && gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -14,6 +16,7 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.3",
     "axios": "^1.4.0",
+    "gh-pages": "^5.0.0",
     "google-spreadsheet": "^3.3.0",
     "next": "13.4.1",
     "next-redux-wrapper": "^8.1.0",
