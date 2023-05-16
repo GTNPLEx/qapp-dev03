@@ -11,7 +11,7 @@ const Login = () => {
   const [authenticated, setAuthenticated] = useState(false);
 
   function google() {
-    window.open('http://localhost:5000/auth/google', '_self');
+    window.open('https://qapp-dev03-cl23kdciu-gtnplex.vercel.app/auth/google', '_self');
     setAuthenticated(true);
   }
 
