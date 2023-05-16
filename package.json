@@ -1,6 +1,6 @@
 {
   "name": "next-saga-test",
-  "homepage": "https://qapp-dev03-cl23kdciu-gtnplex.vercel.app",
+  "homepage": "https://GTNPLex.github.io/qapp-dev03.git",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -24,7 +24,6 @@
     "next-redux-wrapper": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.11.1",
     "redux": "^4.2.1",
