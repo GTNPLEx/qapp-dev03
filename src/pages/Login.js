@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import Google from 'src/img/google.png';
-import Facebook from '../img/facebook.png';
-import Linkedin from '../img/linkedin.png';
+import Google from 'public/img/google.png';
+import Facebook from 'public/img/facebook.png';
+import Linkedin from 'public/img/linkedin.png';
+import Logo from 'public/img/logo.svg';
 import styles from 'src/styles/login.module.css';
 import Navbar from 'src/components/Navbar.js';
 
@@ -32,7 +33,7 @@ const Login = () => {
 
   return (
     <div className={styles.login}>
-      <h1 className={styles.loginTitle}>Choose a Login Method</h1>
+       <img src={Logo} alt="Logo" className={styles.logo} /> Choose a Login Method
       <div className={styles.wrapper}>
         <div className={styles.left}>
           <div className={`${styles.loginButton} ${styles.google}`} onClick={google}>

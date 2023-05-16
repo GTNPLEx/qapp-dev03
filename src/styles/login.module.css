@@ -77,3 +77,9 @@
     background-color: var(--primary-dark-color);
   }
   
+  .logo {
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
