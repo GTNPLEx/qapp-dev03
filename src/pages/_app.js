@@ -19,7 +19,7 @@ const App = () => {
   useEffect(() => {
     const getUser = async () => {
       try {
-        const response = await fetch("http://localhost:5000/auth/login/success", {
+        const response = await fetch("https://qapp-dev03-cl23kdciu-gtnplex.vercel.app/auth/login/success", {
           method: "GET",
           credentials: "include",
           headers: {
