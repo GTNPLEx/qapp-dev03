@@ -1,5 +1,9 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet';
-import credentials from 'credentials.json';
+import credentials from 'process.env.CREDENTIALS';
+import dotenv from 'dotenv';
+
+
+dotenv.config(); // Load environment variables from .env file
 
 const doc = new GoogleSpreadsheet(process.env.GOOGLE_SPREADSHEET_ID);
 
@@ -7,7 +11,7 @@ const doc = new GoogleSpreadsheet(process.env.GOOGLE_SPREADSHEET_ID);
 
 
 async function fetchData(sheetName) {
-  await doc.useServiceAccountAuth(credentials);
+  await doc.useServiceAccountAuth(JSON.parse(process.env.CREDENTIALS));
   await doc.loadInfo();
 
   const sheet = doc.sheetsByTitle[sheetName];
